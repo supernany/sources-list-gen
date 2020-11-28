@@ -1,0 +1,52 @@
+#!/bin/bash
+#
+# sources-list-gen
+# version 1.0
+#
+# ----------------------------------------------------------------------------
+#  "THE BEER-WARE LICENSE" (Revision 42):
+#  <nany@forum.ubuntu-fr.org> wrote this file. As long as you retain this
+#  notice you can do whatever you want with this stuff. If we meet some day,
+#  and you think this stuff is worth it, you can buy me a beer in return. nany
+# ----------------------------------------------------------------------------
+# 
+# dialog texts in french so license in french too :þ
+#
+# ----------------------------------------------------------------------------
+#  "LICENCE BEERWARE" (Révision 42) :
+#  <nany@forum.ubuntu-fr.org> a créé ce fichier. Tant que vous conservez cet
+#  avertissement, vous pouvez faire ce que vous voulez de ce truc. Si on se
+#  rencontre un jour et que vous pensez que ce truc vaut le coup, vous pouvez
+#  me payer une bière en retour. nany
+# ----------------------------------------------------------------------------
+#
+country_code=$(zenity --list --title="Serveur"\
+  --text="Sélectionnez votre serveur."\
+  --column=code --column=pays\
+  --hide-header --hide-column=1\
+  "" "serveur principal" $(sort -k2 server-list.txt))
+mirror='http://'"$country_code"'archive.ubuntu.com/ubuntu/'
+codename=$(lsb_release -sc)
+security='http://security.ubuntu.com/ubuntu'
+cdrom=$(awk -F'[ "]' '{all=$0; gsub("\"","_",all);
+  print "deb cdrom:["all"]/",tolower($5),"main restricted"}'\
+  /var/log/installer/media-info)
+
+wget -qO- https://raw.githubusercontent.com/canonical/cloud-init/master/templates/sources.list.ubuntu.tmpl \
+  | sed "1,8d;
+      s#{{mirror}}#$mirror#;
+      s#{{codename}}#$codename#;
+      s#{{security}}#$security#;
+      9i\# $cdrom" > ~/sources.list
+echo "
+# This system was installed using small removable media
+# (e.g. netinst, live or single CD). The matching \"deb cdrom\"
+# entries were disabled at the end of the installation process.
+# For information about how to configure apt package sources,
+# see the sources.list(5) manual." >> ~/sources.list
+
+echo "file:$HOME/sources.list a été créé dans votre dossier personnel."
+echo
+echo "Si le contenu convient, vous pouvez le recopier dans /etc/apt/"
+echo "en tant qu’administrateur à l’aide de cette commande :"
+echo 'sudo cp -v ~/sources.list /etc/apt/'
