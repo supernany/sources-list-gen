@@ -81,5 +81,6 @@ case $lang in
     echo
     echo "If the content is suitable, you can copy it into /etc/apt/"
     echo "as administrator using this command:";;
+esac
 echo 'sudo cp -v ~/sources.list /etc/apt/'
 ###
