@@ -72,12 +72,12 @@ fi
 ### directives ###
 case $lang in
   "fr")
-    echo "file:$HOME/sources.list has been created in your personal folder."
+    echo "file:$HOME/sources.list a été créé dans votre dossier personnel."
     echo
     echo "Si le contenu convient, vous pouvez le recopier dans /etc/apt/"
     echo "en tant qu’administrateur à l’aide de cette commande :";;
   *)
-    echo "file:$HOME/sources.list a été créé dans votre dossier personnel."
+    echo "file:$HOME/sources.list has been created in your personal folder."
     echo
     echo "If the content is suitable, you can copy it into /etc/apt/"
     echo "as administrator using this command:";;
