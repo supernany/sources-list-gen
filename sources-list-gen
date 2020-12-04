@@ -20,10 +20,12 @@
 #  me payer une bière en retour. nany
 # ----------------------------------------------------------------------------
 #
+
+### variables ###
 url="https://raw.githubusercontent.com/canonical/cloud-init/master/\
 templates/sources.list.ubuntu.tmpl"
 lang=$(grep -oP '(?<=LANG=")[a-z][a-z](?=_.*)' /etc/default/locale)
-case $lang in :
+case $lang in
   "fr")
     country_code=$(zenity --list --title="Serveur"\
       --text="Sélectionnez votre serveur."\
@@ -47,7 +49,9 @@ cdrom=$(awk -F'[ _]' '{gsub("\"","_",$0);
     cn=$5;
   print "deb cdrom:["$0"]/",tolower(cn),"main restricted"}'\
   /var/log/installer/media-info)
+###
 
+### main ###
 wget -qO- "$url" \
   | sed "1,8d;
     s#{{mirror}}#$mirror#;
@@ -63,9 +67,19 @@ if test $(lsb_release -sr | cut -d"." -f1) -ge 20 ; then
 # For information about how to configure apt package sources,
 # see the sources.list(5) manual." >> ~/sources.list
 fi
+###
 
-echo "file:$HOME/sources.list a été créé dans votre dossier personnel."
-echo
-echo "Si le contenu convient, vous pouvez le recopier dans /etc/apt/"
-echo "en tant qu’administrateur à l’aide de cette commande :"
+### directives ###
+case $lang in
+  "fr")
+    echo "file:$HOME/sources.list has been created in your personal folder."
+    echo
+    echo "Si le contenu convient, vous pouvez le recopier dans /etc/apt/"
+    echo "en tant qu’administrateur à l’aide de cette commande :";;
+  *)
+    echo "file:$HOME/sources.list a été créé dans votre dossier personnel."
+    echo
+    echo "If the content is suitable, you can copy it into /etc/apt/"
+    echo "as administrator using this command:";;
 echo 'sudo cp -v ~/sources.list /etc/apt/'
+###
