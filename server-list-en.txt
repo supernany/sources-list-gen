@@ -230,7 +230,7 @@ tz. sever for Tanzania, United Republic of
 ua. sever for Ukraine
 ug. sever for Uganda
 um. sever for United States Minor Outlying Islands
-us. sever for United States Minor of America
+us. sever for United States of America
 uy. sever for Uruguay
 uz. sever for Uzbekistan
 va. sever for Holy See
