@@ -43,7 +43,7 @@ mirror='http://'"$country_code"'archive.ubuntu.com/ubuntu/'
 codename=$(lsb_release -sc)
 security='http://security.ubuntu.com/ubuntu'
 cdrom=$(awk -F'[ _]' '{gsub("\"","_",$0);
-  if ( $4 == "LTS" )
+  if ( $3 == "LTS" )
     cn=$5
   else
     cn=$4;
