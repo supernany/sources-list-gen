@@ -1,0 +1,249 @@
+ad. sever for Andorra
+ae. sever for United Arab Emirates
+af. sever for Afghanistan
+ag. sever for Antigua and Barbuda
+ai. sever for Anguilla (United Kingdom)
+al. sever for Albania
+am. sever for Arménia
+ao. sever for Angola
+aq. sever for Antarctica
+ar. sever for Argentina
+as. sever for American Samoa (United States)
+at. sever for Austria
+au. sever for Australia
+aw. sever for Aruba (Kingdom of the Netherlands)
+ax. sever for Åland (Finland)
+az. sever for Azerbaïdjan
+ba. sever for Bosnia and Herzegovina
+bb. sever for Barbados
+bd. sever for Bangladesh
+be. sever for Belgium
+bf. sever for Burkina Fasso
+bg. sever for Bulgaria
+bh. sever for Bahrain
+bi. sever for Burundi
+bj. sever for Benin
+bl. sever for Saint-Barthélemy
+bm. sever for Bermuda (United Kingdom)
+bn. sever for Brunei
+bo. sever for Bolivia
+bq. sever for Caribbean Netherlands (Bonaire, Saba, and Sint Eustatius)
+br. sever for Brazil
+bs. sever for Bahamas
+bt. sever for Bhutan
+bv. sever for Bouvet Island
+bw. sever for Botswana
+by. sever for Belarus
+bz. sever for Belize
+ca. sever for Canada
+cc. sever for Cocos (Keeling) Islands
+cd. sever for Democratic Republic of the Congo
+cf. sever for Central African Republic
+cg. sever for Congo
+ch. sever for Switzerland
+ci. sever for Côte dIvoire
+ck. sever for Cook Islands
+cl. sever for Chile
+cm. sever for Cameroon
+cn. sever for China
+co. sever for Colombia
+cr. sever for Costa Rica
+cu. sever for Cuba
+cv. sever for Cabo Verde
+cw. sever for Curaçao
+cx. sever for Christmas Island
+cy. sever for Cyprus
+cz. sever for Czechia
+de. sever for Germany
+dj. sever for Djibouti
+dk. sever for Denmark
+dm. sever for Dominica
+do. sever for Dominican Republic
+dz. sever for Algeria
+ec. sever for Ecuador
+ee. sever for Estonia
+eg. sever for Egypt
+eh. sever for Western Sahara
+er. sever for Eritrea
+es. sever for Spain
+et. sever for Ethiopia
+fi. sever for Finland
+fj. sever for Fiji
+fk. sever for Falkland Islands (Malvinas)
+fm. sever for Micronesia (Federated States of)
+fo. sever for Faroe Islands
+fr. sever for France
+ga. sever for Gabon
+gb. sever for United Kingdom of Great Britain and Northern Ireland 	
+gd. sever for Grenada
+ge. sever for Georgia
+gf. sever for French Guiana
+gg. sever for Guernsey
+gh. sever for Ghana
+gi. sever for Gibraltar
+gl. sever for Greenland
+gm. sever for Gambia
+gn. sever for Guinea
+gp. sever for Guadeloupe
+gq. sever for Equatorial Guinea
+gr. sever for Greece
+gs. sever for South Georgia and the South Sandwich Islands
+gt. sever for Guatemala
+gu. sever for Guam
+gw. sever for Guinea-Bissau
+gy. sever for Guyana
+hk. sever for Hong Kong
+hm. sever for Heard Island and McDonald Islands
+hn. sever for Honduras
+hr. sever for Croatia
+ht. sever for Haïti
+hu. sever for Hungary
+id. sever for Indonesia
+ie. sever for Irland
+il. sever for Israël
+im. sever for Isle of Man
+in. sever for India
+io. sever for British Indian Ocean Territory
+iq. sever for Iraq
+ir. sever for Iran (Islamic Republic of)
+is. sever for Iceland
+it. sever for Italy
+je. sever for Jersey
+jm. sever for Jamaïca
+jo. sever for Jordan
+jp. sever for Japan
+ke. sever for Kenya
+kg. sever for Kyrgyzstan
+kh. sever for Cambodia
+ki. sever for Kiribati
+km. sever for Comoros
+kn. sever for Saint Kitts and Nevis
+kp. sever for Korea (Democratic People's Republic of)
+kr. sever for Korea, Republic of
+kw. sever for Kuwait
+ky. sever for Cayman Islands
+kz. sever for Kazakhstan
+la. sever for Lao People's Democratic Republic
+lb. sever for Lebanon
+lc. sever for Saint Lucia
+li. sever for Liechtenstein
+lk. sever for Sri Lanka
+lr. sever for Liberia
+ls. sever for Lesotho
+lt. sever for Lituania
+lu. sever for Luxembourg
+lv. sever for Latvia
+ly. sever for Libya
+ma. sever for Morocco
+mc. sever for Monaco
+md. sever for Moldova, Republic of
+me. sever for Montenegro
+mf. sever for Saint Martin (French part)
+mg. sever for Madagascar
+mh. sever for Marshall Islands
+mk. sever for North Macedonia
+ml. sever for Mali
+mm. sever for Myanmar
+mn. sever for Mongolia
+mo. sever for Macao
+mp. sever for Northern Mariana Islands
+mq. sever for Martinique
+mr. sever for Mauritania
+ms. sever for Montserrat
+mt. sever for Malta
+mu. sever for Mauritius
+mv. sever for Maldives
+mw. sever for Malawi
+mx. sever for Mexico
+my. sever for Malaysia
+mz. sever for Mozambique
+na. sever for Namibia
+nc. sever for New Caledonia
+ne. sever for Niger
+nf. sever for Norfolk Island
+ng. sever for Nigeria
+ni. sever for Nicaragua
+nl. sever for Netherlands
+no. sever for Norway
+np. sever for Nepal
+nr. sever for Nauru
+nu. sever for Niue
+nz. sever for New Zealand
+om. sever for Oman
+pa. sever for Panama
+pe. sever for Peru
+pf. sever for French Polynesia
+pg. sever for Papua New Guinea
+ph. sever for Philippines
+pk. sever for Pakistan
+pl. sever for Poland
+pm. sever for Saint Pierre and Miquelon
+pn. sever for Pitcairn
+pr. sever for Puerto Rico
+ps. sever for Palestine, State of
+pt. sever for Portugal
+pw. sever for Palau
+py. sever for Paraguay
+qa. sever for Qatar
+re. sever for Réunion
+ro. sever for Romania
+rs. sever for Serbia
+ru. sever for Russian Federation
+rw. sever for Rwanda
+sa. sever for Saudi Arabia
+sb. sever for Salomon Islands
+sc. sever for Seychelles
+sd. sever for Sudan
+se. sever for Sweden
+sg. sever for Singapore
+sh. sever for Saint Helena, Ascension and Tristan da Cunha
+si. sever for Slovenia
+sj. sever for Svalbard and Jan Mayen
+sk. sever for Slovakia
+sl. sever for Sierra Leone
+sm. sever for San Marino
+sn. sever for Senegal
+so. sever for Somalia
+sr. sever for Suriname
+ss. sever for South Sudan
+st. sever for Sao Tome and Principe
+sv. sever for El Salvador
+sx. sever for Sint Maarten (Dutch part)
+sy. sever for Syrian Arab Republic
+sz. sever for Eswatini
+tc. sever for Turks and Caicos Islands
+td. sever for Chad
+tf. sever for French Southern Territories
+tg. sever for Togo
+th. sever for Thailand
+tj. sever for Tajikistan
+tk. sever for Tokelau
+tl. sever for Timor-Leste
+tm. sever for Turkmenistan
+tn. sever for Tunisia
+to. sever for Tonga
+tr. sever for Turkey
+tt. sever for Trinidad and Tobago
+tv. sever for Tuvalu
+tw. sever for Taiwan, Province of China
+tz. sever for Tanzania, United Republic of
+ua. sever for Ukraine
+ug. sever for Uganda
+um. sever for United States Minor Outlying Islands
+us. sever for United States Minor of America
+uy. sever for Uruguay
+uz. sever for Uzbekistan
+va. sever for Holy See
+vc. sever for Saint Vincent and the Grenadines
+ve. sever for Venezuela (Bolivarian Republic of)
+vg. sever for Virgin Islands (British)
+vi. sever for Virgin Islands (U.S.)
+vn. sever for Viet Nam
+vu. sever for Vanuatu
+wf. sever for Wallis and Futuna
+ws. sever for Samoa
+ye. sever for Yemen
+yt. sever for Mayotte
+za. sever for South Africa
+zm. sever for Zambia
+zw. sever for Zimbabwe

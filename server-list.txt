@@ -138,7 +138,7 @@ ma. serveur Maroc
 mc. serveur Monaco
 md. serveur Moldavie
 me. serveur Monténégro
-mf. serveur Saint-Martin
+mf. serveur Saint-Martin (partie française)
 mg. serveur Madagascar
 mh. serveur Îles Marshall
 mk. serveur Macédoine du Nord
@@ -201,7 +201,7 @@ si. serveur Slovénie
 sj. serveur Svalbard et ile Jan Mayen
 sk. serveur Slovaquie
 sl. serveur Sierra Leone
-sm. serveur Saint-Marin (partie française)
+sm. serveur Saint-Marin
 sn. serveur Sénégal
 so. serveur Somalie
 sr. serveur Suriname
