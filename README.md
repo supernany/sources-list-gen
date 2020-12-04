@@ -1,6 +1,6 @@
 # sources-list-gen
 
-A sources.list generator.
+A sources.list generator for Ubuntu.
 
 Simply run:
 ```
