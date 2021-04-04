@@ -48,7 +48,7 @@ cdrom=$(test -f "$mi" && awk -F'[ _]' '{gsub("\"","_",$0);
     cn=$5
   else
     cn=$4;
-  print "deb cdrom:["$0"]/",tolower(cn),"main restricted"}'\
+  print "# deb cdrom:["$0"]/",tolower(cn),"main restricted"}'\
   "$mi")
 ###
 
