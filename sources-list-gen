@@ -29,17 +29,19 @@ lang=$(grep -oP '(?<=LANG=")[a-z][a-z](?=_.*)' /etc/default/locale)
 if test -z "${translations[$lang]}" ; then
   lang="en"
 fi
+path="$(dirname $0)/"
+echo $path
 file="server-list-$lang.txt"
-if test ! -s "$file" ; then
+if test ! -s "$path$file" ; then
   file="server-list-en.txt"
 fi
-if test -s end-$lang.txt ; then
-  directives="$(cat end-$lang.txt)"
+if test -s ${path}end-$lang.txt ; then
+  directives="$(cat ${path}end-$lang.txt)"
 else
-  directives="$(cat end-en.txt)"
+  directives="$(cat ${path}end-en.txt)"
 fi
 IFS=$'\n'
-lst=( $(sort -k2 "$file" | awk -F';' '{print $1"\n"$2}') )
+lst=( $(sort -k2 "$path$file" | awk -F';' '{print $1"\n"$2}') )
 country_code=$(zenity --list --title="Serveur"\
   --text="${translations[$lang]}"\
   --column=code --column=country\
@@ -75,7 +77,7 @@ if test $(lsb_release -sr | cut -d"." -f1) -ge 20 ; then
 # see the sources.list(5) manual." >> ~/sources.list
 fi
 
-if test -f "$mi" ; then
+if test -n "$cdrom" ; then
   sed -i "1i\\$cdrom" ~/sources.list
 fi
 
