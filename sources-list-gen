@@ -30,7 +30,6 @@ if test -z "${translations[$lang]}" ; then
   lang="en"
 fi
 path="$(dirname $0)/"
-echo $path
 file="server-list-$lang.txt"
 if test ! -s "$path$file" ; then
   file="server-list-en.txt"
@@ -52,7 +51,7 @@ mirror='http://'"${country_code/' '/''}"'archive.ubuntu.com/ubuntu/'
 codename=$(lsb_release -sc)
 security='http://security.ubuntu.com/ubuntu'
 mi='/var/log/installer/media-info'
-cdrom=$(test -f "$mi" && awk -F'[ _]' '{gsub("\"","_",$0);
+cdrom=$(test -s "$mi" && awk -F'[ _]' '{gsub("\"","_",$0);
   if ( $3 == "LTS" )
     cn=$5
   else
