@@ -1,0 +1,250 @@
+ ;Serveur principal
+ad.;Serveur pour Andorre
+ae.;Serveur pour Émirats arabes unis
+af.;Serveur pour Afghanistan
+ag.;Serveur pour Antigua-et-Barbuda
+ai.;Serveur pour Anguilla
+al.;Serveur pour Albanie
+am.;Serveur pour Arménie
+ao.;Serveur pour Angola
+aq.;Serveur pour Antarctique
+ar.;Serveur pour Argentine
+as.;Serveur pour Samoa américaines
+at.;Serveur pour Autriche
+au.;Serveur pour Australie
+aw.;Serveur pour Aruba
+ax.;Serveur pour Îles Åland
+az.;Serveur pour Azerbaïdjan
+ba.;Serveur pour Bosnie-Herzégovine
+bb.;Serveur pour Barbade
+bd.;Serveur pour Bangladesh
+be.;Serveur pour Belgique
+bf.;Serveur pour Burkina Fasso
+bg.;Serveur pour Bulgarie
+bh.;Serveur pour Bahreïn
+bi.;Serveur pour Burundi
+bj.;Serveur pour Bénin
+bl.;Serveur pour Saint-Barthélemy
+bm.;Serveur pour Bermudes
+bn.;Serveur pour Brunei
+bo.;Serveur pour Bolivie
+bq.;Serveur pour Pays-Bas caribéens
+br.;Serveur pour Brésil
+bs.;Serveur pour Bahamas
+bt.;Serveur pour Bhoutan
+bv.;Serveur pour Île Bouvet
+bw.;Serveur pour Botswana
+by.;Serveur pour Biélorussie
+bz.;Serveur pour Belize
+ca.;Serveur pour Canada
+cc.;Serveur pour Îles Cocos
+cd.;Serveur pour République démocratique du Congo
+cf.;Serveur pour République centrafricaine
+cg.;Serveur pour République du Congo
+ch.;Serveur pour Suisse
+ci.;Serveur pour Côte dIvoire
+ck.;Serveur pour Îles Cook
+cl.;Serveur pour Chili
+cm.;Serveur pour Cameroun
+cn.;Serveur pour Chine
+co.;Serveur pour Colombie
+cr.;Serveur pour Costa Rica
+cu.;Serveur pour Cuba
+cv.;Serveur pour Cap-Vert
+cw.;Serveur pour Curaçao
+cx.;Serveur pour Île Christmas
+cy.;Serveur pour Chypre
+cz.;Serveur pour Tchéquie
+de.;Serveur pour Allemagne
+dj.;Serveur pour Djibouti
+dk.;Serveur pour Danemark
+dm.;Serveur pour Dominique
+do.;Serveur pour République dominicaine
+dz.;Serveur pour Algérie
+ec.;Serveur pour Équateur
+ee.;Serveur pour Estonie
+eg.;Serveur pour Égypte
+eh.;Serveur pour République arabe sahraouie démocratique
+er.;Serveur pour Érythrée
+es.;Serveur pour Espagne
+et.;Serveur pour Éthiopie
+fi.;Serveur pour Finlande
+fj.;Serveur pour Fidji
+fk.;Serveur pour Malouines
+fm.;Serveur pour États fédérés de Micronésie
+fo.;Serveur pour Îles Féroé
+fr.;Serveur pour France
+ga.;Serveur pour Gabon
+gb.;Serveur pour Royaume-Uni
+gd.;Serveur pour Grenade
+ge.;Serveur pour Géorgie
+gf.;Serveur pour Guyane
+gg.;Serveur pour Guernesey
+gh.;Serveur pour Ghana
+gi.;Serveur pour Gibraltar
+gl.;Serveur pour Groenland
+gm.;Serveur pour Gambie
+gn.;Serveur pour Guinée
+gp.;Serveur pour Guadeloupe
+gq.;Serveur pour Guinée équatoriale
+gr.;Serveur pour Grèce
+gs.;Serveur pour Géorgie du Sud-et-les îles Sandwich du Sud
+gt.;Serveur pour Guatemala
+gu.;Serveur pour Guam
+gw.;Serveur pour Guinée-Bissau
+gy.;Serveur pour Guyana
+hk.;Serveur pour Hong Kong
+hm.;Serveur pour Îles Heard-et-MacDonald
+hn.;Serveur pour Honduras
+hr.;Serveur pour Croatie
+ht.;Serveur pour Haïti
+hu.;Serveur pour Hongrie
+id.;Serveur pour Indonésie
+ie.;Serveur pour Irlande
+il.;Serveur pour Israël
+im.;Serveur pour Île de Man
+in.;Serveur pour Inde
+io.;Serveur pour Territoire britannique de locéan Indien
+iq.;Serveur pour Irak
+ir.;Serveur pour Iran
+is.;Serveur pour Islande
+it.;Serveur pour Italie
+je.;Serveur pour Jersey
+jm.;Serveur pour Jamaïque
+jo.;Serveur pour Jordanie
+jp.;Serveur pour Japon
+ke.;Serveur pour Kenya
+kg.;Serveur pour Kirghizistan
+kh.;Serveur pour Cambodge
+ki.;Serveur pour Kiribati
+km.;Serveur pour Comores
+kn.;Serveur pour Saint-Christophe-et-Niévès
+kp.;Serveur pour Corée du Nord
+kr.;Serveur pour Corée du Sud
+kw.;Serveur pour Koweït
+ky.;Serveur pour Îles Caïmans
+kz.;Serveur pour Kazakhstan
+la.;Serveur pour Laos
+lb.;Serveur pour Liban
+lc.;Serveur pour Sainte-Lucie
+li.;Serveur pour Liechtenstein
+lk.;Serveur pour Sri Lanka
+lr.;Serveur pour Liberia
+ls.;Serveur pour Lesotho
+lt.;Serveur pour Lituanie
+lu.;Serveur pour Luxembourg
+lv.;Serveur pour Lettonie
+ly.;Serveur pour Libye
+ma.;Serveur pour Maroc
+mc.;Serveur pour Monaco
+md.;Serveur pour Moldavie
+me.;Serveur pour Monténégro
+mf.;Serveur pour Saint-Martin (partie française)
+mg.;Serveur pour Madagascar
+mh.;Serveur pour Îles Marshall
+mk.;Serveur pour Macédoine du Nord
+ml.;Serveur pour Mali
+mm.;Serveur pour Birmanie
+mn.;Serveur pour Mongolie
+mo.;Serveur pour Macao
+mp.;Serveur pour Îles Mariannes du Nord
+mq.;Serveur pour Martinique
+mr.;Serveur pour Mauritanie
+ms.;Serveur pour Montserrat
+mt.;Serveur pour Malte
+mu.;Serveur pour Maurice
+mv.;Serveur pour Maldives
+mw.;Serveur pour Malawi
+mx.;Serveur pour Mexique
+my.;Serveur pour Malaisie
+mz.;Serveur pour Mozambique
+na.;Serveur pour Namibie
+nc.;Serveur pour Nouvelle-Calédonie
+ne.;Serveur pour Niger
+nf.;Serveur pour Île Norfolk
+ng.;Serveur pour Nigeria
+ni.;Serveur pour Nicaragua
+nl.;Serveur pour Pays-Bas
+no.;Serveur pour Norvège
+np.;Serveur pour Népal
+nr.;Serveur pour Nauru
+nu.;Serveur pour Niue
+nz.;Serveur pour Nouvelle-Zélande
+om.;Serveur pour Oman
+pa.;Serveur pour Panama
+pe.;Serveur pour Pérou
+pf.;Serveur pour Polynésie française
+pg.;Serveur pour Papouasie-Nouvelle-Guinée
+ph.;Serveur pour Philippines
+pk.;Serveur pour Pakistan
+pl.;Serveur pour Pologne
+pm.;Serveur pour Saint-Pierre-et-Miquelon
+pn.;Serveur pour Îles Pitcairn
+pr.;Serveur pour Porto Rico
+ps.;Serveur pour Palestine
+pt.;Serveur pour Portugal
+pw.;Serveur pour Palaos
+py.;Serveur pour Paraguay
+qa.;Serveur pour Qatar
+re.;Serveur pour La Réunion
+ro.;Serveur pour Roumanie
+rs.;Serveur pour Serbie
+ru.;Serveur pour Russie
+rw.;Serveur pour Rwanda
+sa.;Serveur pour Arabie saoudite
+sb.;Serveur pour Salomon
+sc.;Serveur pour Seychelles
+sd.;Serveur pour Soudan
+se.;Serveur pour Suède
+sg.;Serveur pour Singapour
+sh.;Serveur pour Sainte-Hélène, Ascension et Tristan da Cunha
+si.;Serveur pour Slovénie
+sj.;Serveur pour Svalbard et ile Jan Mayen
+sk.;Serveur pour Slovaquie
+sl.;Serveur pour Sierra Leone
+sm.;Serveur pour Saint-Marin
+sn.;Serveur pour Sénégal
+so.;Serveur pour Somalie
+sr.;Serveur pour Suriname
+ss.;Serveur pour Soudan du Sud
+st.;Serveur pour Sao Tomé-et-Principe
+sv.;Serveur pour Salvador
+sx.;Serveur pour Saint-Martin (partie néerlandaise)
+sy.;Serveur pour Syrie
+sz.;Serveur pour Eswatini
+tc.;Serveur pour Îles Turques-et-Caïques
+td.;Serveur pour Tchad
+tf.;Serveur pour Terres australes et antarctiques françaises
+tg.;Serveur pour Togo
+th.;Serveur pour Thaïlande
+tj.;Serveur pour Tadjikistan
+tk.;Serveur pour Tokelau
+tl.;Serveur pour Timor oriental
+tm.;Serveur pour Turkménistan
+tn.;Serveur pour Tunisie
+to.;Serveur pour Tonga
+tr.;Serveur pour Turquie
+tt.;Serveur pour Trinité-et-Tobago
+tv.;Serveur pour Tuvalu
+tw.;Serveur pour Taïwan
+tz.;Serveur pour Tanzanie
+ua.;Serveur pour Ukraine
+ug.;Serveur pour Ouganda
+um.;Serveur pour Îles mineures éloignées des États-Unis
+us.;Serveur pour États-Unis
+uy.;Serveur pour Uruguay
+uz.;Serveur pour Ousbékistan
+va.;Serveur pour Saint-Siège (État de la Cité du Vatican)
+vc.;Serveur pour Saint-Vincent-et-les-Grenadines
+ve.;Serveur pour Venezuela
+vg.;Serveur pour Îles Vierges britanniques
+vi.;Serveur pour Îles Vierges des États-Unis
+vn.;Serveur pour Viêt Nam
+vu.;Serveur pour Vanuatu
+wf.;Serveur pour Wallis-et-Futuna
+ws.;Serveur pour Samoa
+ye.;Serveur pour Yémen
+yt.;Serveur pour Mayotte
+za.;Serveur pour Afrique du Sud
+zm.;Serveur pour Zambie
+zw.;Serveur pour Zimbabwe

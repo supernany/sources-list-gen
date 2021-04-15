@@ -22,24 +22,31 @@
 #
 
 ### variables ###
+translations=( [en]="Sélectionnez votre serveur." [fr]="Selecte your server." )
 url="https://raw.githubusercontent.com/canonical/cloud-init/master/\
 templates/sources.list.ubuntu.tmpl"
 lang=$(grep -oP '(?<=LANG=")[a-z][a-z](?=_.*)' /etc/default/locale)
-case $lang in
-  "fr")
-    country_code=$(zenity --list --title="Serveur"\
-      --text="Sélectionnez votre serveur."\
-      --column=code --column=pays\
-      --hide-header --hide-column=1\
-      "" "serveur principal" $(sort -k2 server-list.txt));;
-  *)
-    country_code=$(zenity --list --title="Server"\
-      --text="Select your server."\
-      --column=code --column=pays\
-      --hide-header --hide-column=1\
-      "" "global sever" $(sort -k2 server-list-en.txt));;
-esac
-mirror='http://'"$country_code"'archive.ubuntu.com/ubuntu/'
+if test -z "${translations[$lang]}" ; then
+  lang="en"
+fi
+file="server-list-$lang.txt"
+if test ! -s "$file" ; then
+  file="server-list-en.txt"
+fi
+if test -s end-$lang.txt ; then
+  directives="$(cat end-$lang.txt)"
+else
+  directives="$(cat end-en.txt)"
+fi
+IFS=$'\n'
+lst=( $(sort -k2 "$file" | awk -F';' '{print $1"\n"$2}') )
+country_code=$(zenity --list --title="Serveur"\
+  --text="${translations[$lang]}"\
+  --column=code --column=country\
+  --hide-header --hide-column=1\
+  "${lst[@]}")
+unset IFS
+mirror='http://'"${country_code/' '/''}"'archive.ubuntu.com/ubuntu/'
 codename=$(lsb_release -sc)
 security='http://security.ubuntu.com/ubuntu'
 mi='/var/log/installer/media-info'
@@ -71,20 +78,7 @@ fi
 if test -f "$mi" ; then
   sed -i "1i\\$cdrom" ~/sources.list
 fi
-###
 
-### directives ###
-case $lang in
-  "fr")
-    echo "file:$HOME/sources.list a été créé dans votre dossier personnel."
-    echo
-    echo "Si le contenu convient, vous pouvez le recopier dans /etc/apt/"
-    echo "en tant qu’administrateur à l’aide de cette commande :";;
-  *)
-    echo "file:$HOME/sources.list has been created in your personal folder."
-    echo
-    echo "If the content is suitable, you can copy it into /etc/apt/"
-    echo "as administrator using this command:";;
-esac
-echo 'sudo cp -v ~/sources.list /etc/apt/'
+echo "file:$HOME/sources.list $directives"
+echo "sudo cp -v ~/sources.list /etc/apt/"
 ###

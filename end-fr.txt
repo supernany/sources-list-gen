@@ -1,0 +1,4 @@
+a été créé dans votre dossier personnel.
+
+Si le contenu convient, vous pouvez le recopier dans /etc/apt/
+en tant qu’administrateur à l’aide de cette commande :
