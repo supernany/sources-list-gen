@@ -81,5 +81,6 @@ if test -n "$cdrom" ; then
 fi
 
 echo "file:$HOME/sources.list $directives"
-echo "sudo cp -v ~/sources.list /etc/apt/"
+echo "sudo cp -v ~/sources.list /etc/apt/ && \
+sudo cp -Tv ~/sources.list /etc/apt/sources.list.save"
 ###
