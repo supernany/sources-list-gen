@@ -22,7 +22,7 @@
 #
 
 ### variables ###
-translations=( [en]="Sélectionnez votre serveur." [fr]="Selecte your server." )
+translations=( [fr]="Sélectionnez votre serveur." [en]="Select your server." )
 url="https://raw.githubusercontent.com/canonical/cloud-init/master/\
 templates/sources.list.ubuntu.tmpl"
 lang=$(grep -oP '(?<=LANG=")[a-z][a-z](?=_.*)' /etc/default/locale)
