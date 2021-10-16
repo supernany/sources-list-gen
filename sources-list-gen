@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # sources-list-gen
-# version 1.6
+# version 1.7
 #
 # ----------------------------------------------------------------------------
 #  "THE BEER-WARE LICENSE" (Revision 42):
@@ -31,7 +31,6 @@ lang=$(grep -oP '[a-z][a-z](?=_.*)' ~/.config/user-dirs.locale)
 if test -z "${translations[$lang]}" ; then
   lang="en"
 fi
-lang="en"
 path="$(dirname $0)/"
 file="server-list-$lang.txt"
 if test ! -s "$path$file" ; then
