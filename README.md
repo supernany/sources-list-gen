@@ -15,6 +15,7 @@ cd sources-list-gen
 ```
 bash sources-list-gen
 ```
+Select your server and run:
 ```
 sudo cp -v ~/sources.list /etc/apt/ && sudo cp -Tv ~/sources.list /etc/apt/sources.list.save
 ```
