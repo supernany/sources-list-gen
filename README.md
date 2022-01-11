@@ -9,6 +9,9 @@ sudo apt install git
 ```
 git clone https://github.com/supernany/sources-list-gen.git
 ```
+```
+cd sources-list-gen
+```
 If you can’t get git, run:
 ```
 wget -c https://github.com/supernany/sources-list-gen/archive/refs/tags/sources-list-gen.tar.gz
@@ -16,10 +19,10 @@ wget -c https://github.com/supernany/sources-list-gen/archive/refs/tags/sources-
 ```
 tar -xzf sources-list-gen.tar.gz
 ```
+```
+cd sources-list-gen-1.7
+```
 Then run:
-```
-cd sources-list-gen
-```
 ```
 bash sources-list-gen
 ```
