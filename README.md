@@ -14,7 +14,7 @@ cd sources-list-gen
 ```
 If you can’t get git, run:
 ```
-wget -c https://github.com/supernany/sources-list-gen/archive/refs/tags/sources-list-gen.tar.gz
+wget -c https://github.com/supernany/sources-list-gen/archive/refs/tags/1.7.tar.gz
 ```
 ```
 tar -xzf sources-list-gen.tar.gz
