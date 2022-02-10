@@ -17,7 +17,7 @@ If you can’t get git, run:
 wget -c https://github.com/supernany/sources-list-gen/archive/refs/tags/1.7.tar.gz
 ```
 ```
-tar -xzf sources-list-gen.tar.gz
+tar -xzf 1.7.tar.gz
 ```
 ```
 cd sources-list-gen-1.7
