@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # sources-list-gen
-# version 1.7
+# version 1.8
 #
 # ----------------------------------------------------------------------------
 #  "THE BEER-WARE LICENSE" (Revision 42):
@@ -86,6 +86,5 @@ if test -n "$cdrom" ; then
 fi
 
 echo "file:$HOME/sources.list $directives"
-echo "sudo cp -v ~/sources.list /etc/apt/ && \
-sudo cp -Tv ~/sources.list /etc/apt/sources.list.save"
+echo "sudo cp -v ~/sources.list /etc/apt/"
 ###
