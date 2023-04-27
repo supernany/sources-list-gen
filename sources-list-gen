@@ -55,6 +55,7 @@ unset IFS
 mirror='http://'"${country_code/' '/''}"'archive.ubuntu.com/ubuntu/'
 codename=$(lsb_release -sc)
 security='http://security.ubuntu.com/ubuntu'
+VerMaj=$(lsb_release -sr | cut -d"." -f1)
 mi='/var/log/installer/media-info'
 cdrom=$(test -s "$mi" && awk -F'[ _]' '{gsub("\"","_",$0);
   if ( $3 == "LTS" )
@@ -72,7 +73,7 @@ wget -qO- "$url" \
     s#{{codename}}#$codename#;
     s#{{security}}#$security#" > ~/sources.list
 
-if test $(lsb_release -sr | cut -d"." -f1) -ge 20 ; then
+if test $VerMaj -ge 20 -a $VerMaj -lt 23 ; then
   echo "
 # This system was installed using small removable media
 # (e.g. netinst, live or single CD). The matching \"deb cdrom\"
