@@ -1,0 +1,5 @@
+echo "Les fichiers « sources.list », « ubuntu.sources » et « ubuntu.sources.curtin.orig » ont été créés dans $HOME."
+echo "Si le contenu convient, vous pouvez les recopier à l’aide des commandes suivantes :"
+echo "sudo cp -v ~/sources.list /etc/apt/"
+echo "sudo cp -v ~/ubuntu.sources /etc/apt/sources.list.d/"
+echo "sudo cp -v ~/ubuntu.sources.curtin.orig /etc/apt/sources.list.d/"

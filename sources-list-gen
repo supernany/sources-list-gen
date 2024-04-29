@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # sources-list-gen
-# version 1.8
+# version 2.0
 #
 # ----------------------------------------------------------------------------
 #  "THE BEER-WARE LICENSE" (Revision 42):
@@ -27,6 +27,8 @@ translations[en]="Select your server."
 translations[fr]="Sélectionnez votre serveur."
 url="https://raw.githubusercontent.com/canonical/cloud-init/master/\
 templates/sources.list.ubuntu.tmpl"
+url822="https://raw.githubusercontent.com/canonical/cloud-init/master/\
+templates/sources.list.ubuntu.deb822.tmpl"
 lang=$(grep -oP '[a-z][a-z](?=_.*)' ~/.config/user-dirs.locale)
 if test -z "${translations[$lang]}" ; then
   lang="en"
@@ -41,6 +43,11 @@ if test -s ${path}end-$lang.txt ; then
 else
   directives="$(cat ${path}end-en.txt)"
 fi
+if test -s ${path}end822-$lang ; then
+  directives822="${path}end822-$lang"
+else
+  directives822="${path}end822-en"
+fi
 IFS=$'\n'
 lst=( $(sort -k2 "$path$file" | awk -F';' '{print $1"\n"$2}') )
 declare -A ztitle
@@ -50,12 +57,12 @@ country_code=$(zenity --list --title="${ztitle[$lang]}"\
   --text="${translations[$lang]}"\
   --column=code --column=country\
   --hide-header --hide-column=1\
-  "${lst[@]}")
+  "${lst[@]}" 2>/dev/null)
 unset IFS
 mirror='http://'"${country_code/' '/''}"'archive.ubuntu.com/ubuntu/'
-codename=$(lsb_release -sc)
+codename=$(lsb_release -sc 2>/dev/null)
 security='http://security.ubuntu.com/ubuntu'
-VerMaj=$(lsb_release -sr | cut -d"." -f1)
+VerMaj=$(lsb_release -sr 2>/dev/null | cut -d"." -f1)
 mi='/var/log/installer/media-info'
 cdrom=$(test -s "$mi" && awk -F'[ _]' '{gsub("\"","_",$0);
   if ( $3 == "LTS" )
@@ -67,25 +74,38 @@ cdrom=$(test -s "$mi" && awk -F'[ _]' '{gsub("\"","_",$0);
 ###
 
 ### main ###
-wget -qO- "$url" \
-  | sed "1,8d;
-    s#{{mirror}}#$mirror#;
-    s#{{codename}}#$codename#;
-    s#{{security}}#$security#" > ~/sources.list
+if test $VerMaj -lt 24 ; then
+  wget -qO- "$url" \
+    | sed "1,8d;
+      s#{{mirror}}#$mirror#;
+      s#{{codename}}#$codename#;
+      s#{{security}}#$security#" > ~/sources.list
 
-if test $VerMaj -ge 20 -a $VerMaj -lt 23 ; then
-  echo "
+  if test $VerMaj -ge 20 -a $VerMaj -lt 23 ; then
+    echo "
 # This system was installed using small removable media
 # (e.g. netinst, live or single CD). The matching \"deb cdrom\"
 # entries were disabled at the end of the installation process.
 # For information about how to configure apt package sources,
 # see the sources.list(5) manual." >> ~/sources.list
-fi
+  fi
 
-if test -n "$cdrom" ; then
-  sed -i "1i\\$cdrom" ~/sources.list
-fi
+  if test -n "$cdrom" ; then
+    sed -i "1i\\$cdrom" ~/sources.list
+  fi
 
-echo "file:$HOME/sources.list $directives"
-echo "sudo cp -v ~/sources.list /etc/apt/"
+  echo "file:$HOME/sources.list $directives"
+  echo "sudo cp -v ~/sources.list /etc/apt/"
+else
+  wget -qO- "$url822" \
+    | sed "1,12d;
+      s#{{mirror}}#$mirror#;
+      s#{{codename}}#$codename#g;
+      s#{{security}}#$security/#" > ~/ubuntu.sources.curtin.orig
+  grep -v "^#" ~/ubuntu.sources.curtin.orig | sed '1d' > ~/ubuntu.sources
+  echo \
+  "# Ubuntu sources have moved to /etc/apt/sources.list.d/ubuntu.sources" \
+  > ~/sources.list
+  source "$directives822"
+fi
 ###

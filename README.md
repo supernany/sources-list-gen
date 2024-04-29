@@ -14,19 +14,17 @@ cd sources-list-gen
 ```
 If you can’t get git, run:
 ```
-wget -c https://github.com/supernany/sources-list-gen/archive/refs/tags/1.9.tar.gz
+wget -c https://github.com/supernany/sources-list-gen/archive/refs/tags/2.0.tar.gz
 ```
 ```
-tar -xzf 1.9.tar.gz
+tar -xzf 2.0.tar.gz
 ```
 ```
-cd sources-list-gen-1.9
+cd sources-list-gen-2.0
 ```
 Then run:
 ```
 bash sources-list-gen
 ```
-Select your server and run:
-```
-sudo cp -v ~/sources.list /etc/apt/
-```
+Select your server.
+Finaly read the instructions in terminal.
