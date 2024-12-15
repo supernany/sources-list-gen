@@ -14,13 +14,13 @@ cd sources-list-gen
 ```
 If you can’t get git, run:
 ```
-wget -c https://github.com/supernany/sources-list-gen/archive/refs/tags/2.0.tar.gz
+wget -c https://github.com/supernany/sources-list-gen/archive/refs/tags/2.1.tar.gz
 ```
 ```
-tar -xzf 2.0.tar.gz
+tar -xzf 2.1.tar.gz
 ```
 ```
-cd sources-list-gen-2.0
+cd sources-list-gen-2.1
 ```
 Then run:
 ```
