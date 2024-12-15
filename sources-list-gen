@@ -101,7 +101,9 @@ else
     | sed "1,12d;
       s#{{mirror}}#$mirror#;
       s#{{codename}}#$codename#g;
-      s#{{security}}#$security/#" > ~/ubuntu.sources.curtin.orig
+      s#{{security}}#$security/#;
+      s#{{.*y_key .* default('##;
+      s#', true)}}##" > ~/ubuntu.sources.curtin.orig
   grep -v "^#" ~/ubuntu.sources.curtin.orig | sed '1d' > ~/ubuntu.sources
   echo \
   "# Ubuntu sources have moved to /etc/apt/sources.list.d/ubuntu.sources" \
