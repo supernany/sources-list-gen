@@ -104,7 +104,7 @@ else
       s#{{security}}#$security/#;
       s#{{.*y_key .* default('##;
       s#', true)}}##" > ~/ubuntu.sources.curtin.orig
-  grep -v "^#" ~/ubuntu.sources.curtin.orig | sed '1d' > ~/ubuntu.sources
+  sed "3d;/^#/d" ~/ubuntu.sources.curtin.orig > ~/ubuntu.sources
   echo \
   "# Ubuntu sources have moved to /etc/apt/sources.list.d/ubuntu.sources" \
   > ~/sources.list
